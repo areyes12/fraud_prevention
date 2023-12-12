@@ -51,19 +51,12 @@ ORDER BY amount DESC
 LIMIT 100;
 
 -- Do you see any anomalous transactions that could be fraudulent?
--- Yes, I see Transaction ID 3163 for $1894 and 2451 for $1617 are some of many (12 transactions more than $100).
-
 -- Is there a higher number of fraudulent transactions made during this time frame versus the rest of the day?
 
 SELECT *
 FROM transaction
 ORDER BY amount DESC
 LIMIT 100;
-
--- I believe there is no specific correlation with  early afternoon, late evening and other sporadic times showing anamolies and suspicious fraud transactions.
-
--- If you answered yes to the previous question, explain why you think there might be fraudulent transactions during this time frame.
-
 
 
 
